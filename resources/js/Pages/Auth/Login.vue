@@ -10,7 +10,7 @@ import { Head, Link, useForm } from '@inertiajs/vue3';
 defineProps({
     canResetPassword: {
         type: Boolean,
-    },
+    },v
     status: {
         type: String,
     },

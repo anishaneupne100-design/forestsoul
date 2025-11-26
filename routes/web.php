@@ -1,9 +1,11 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use Illuminate\Auth\Events\Login;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+Route::get('/login', fn() => Inertia::render('Login'));
 
 Route::get('/', function () {
     return Inertia::render('Dashboard', [
